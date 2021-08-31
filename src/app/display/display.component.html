@@ -1,0 +1,24 @@
+<div *ngIf="dataLoaded">
+  <h2>{{ game.description }}</h2>
+  <h3>{{ game.startedDate }}</h3>
+
+  <table id="scoreboard">
+    <tr>
+      <th>Round</th>
+      <th *ngFor="let player of players">{{ player.name }}</th>
+    </tr>
+    <tr *ngFor="let round of rounds">
+      <td> {{ round.index }}</td>
+      <td *ngFor="let score of round.scores">
+        {{ score.score }}
+      </td>
+    </tr>
+    <tr>
+        <td>Current Score:</td>
+        <td *ngFor="let player of players" class="playerScore">{{ player.score }}</td>
+      </tr>
+    </table>
+
+
+
+</div>

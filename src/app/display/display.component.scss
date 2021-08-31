@@ -1,0 +1,28 @@
+#scoreboard {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#scoreboard td, #scoreboard th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#scoreboard tr:nth-child(even){background-color: #f2f2f2;}
+
+#scoreboard tr:hover {background-color: #ddd;}
+
+#scoreboard th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#scoreboard tr:last-child {
+  background-color: darkolivegreen;
+  color: white;
+  font-weight: bold;
+}

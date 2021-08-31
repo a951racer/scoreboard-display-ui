@@ -1,0 +1,16 @@
+      <h2>Select a game to display: </h2>
+      <table [ngClass]="'game-table'" id="game-table">
+        <tr>
+          <th></th>
+          <th>Date Started</th>
+          <th>Description</th>
+          <th># of Players</th>
+        </tr>
+        <tr *ngFor="let game of gameList">
+          <td><a [routerLink]="['/display', game._id]">Display</a></td>
+          <td>{{ game.startedDate }}</td>
+          <td>{{ game.description }}</td>
+          <td>{{ game.players.length }}</td>
+        </tr>
+      </table>
+  
